@@ -1,0 +1,38 @@
+{
+  "name": "blitui",
+  "version": "0.1.0",
+  "description": "Flicker-free terminal rendering core",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "example:spinner": "tsx examples/spinner.ts",
+    "example:progress": "tsx examples/progress.ts",
+    "example:resize": "tsx examples/resize.ts"
+  },
+  "keywords": [
+    "terminal",
+    "tui",
+    "rendering",
+    "flicker-free"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
